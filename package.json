@@ -1,0 +1,21 @@
+{
+  "name": "angular-intro",
+  "version": "0.0.1",
+  "description": "introduction to AngularJS",
+  "main": "server.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/unthunk/angular-intro"
+  },
+  "author": {
+    "name": "lucas myers",
+    "email": "lucas@unthunk.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "express": "^4.11.1"
+  }
+}
