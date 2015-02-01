@@ -1,0 +1,18 @@
+body {
+  background-color: goldenrod;
+  margin: 0;
+  padding: 0;
+  color: #222;
+  font-family: helvetica, arial, sans-serif;
+}
+h1 {
+  background-color: #fff;
+  padding: 30px;
+  margin: 0;
+}
+.beer-list img {
+  width: 150px;
+}
+.beer-app {
+  margin: 0 30px;
+}
