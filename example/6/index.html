@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en" ng-app="beerApp">
+<head>
+  <title>The Beer App</title>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="/css/beer-app.css">
+</head>
+<body>
+  <h1>The Beer App</h1>
+
+
+  <div class="beer-app" ng-controller="beerListCtrl">
+
+    <h2 ng-bind="listTitle | capitalize"></h2>
+
+    <input type="text" ng-model="search">
+
+    <ul class="beer-list">
+      <li ng-repeat="beer in beers | filter: search | orderBy: 'name' ">
+        <h3 ng-bind="beer.name"></h3>
+        <p ng-bind="beer.style"></p>
+        <img ng-src="/img/{{beer.img}}" />
+      </li>
+    </ul>
+
+  </div>
+
+
+  <script src="/bower_components/angular/angular.min.js"></script>
+  <script src="app.js"></script>
+  <script src="beerlist/beerListController.js"></script>
+  <script src="filters/capitalize.js"></script>
+</body>
+</html>
