@@ -1,0 +1,12 @@
+<!-- this is out new partial html for the breweries controller -->
+  <div ng-controller="breweriesCtrl">
+
+    <h2 ng-bind="breweriesTitle | capitalize"></h2> <!-- we can still use our custom filter -->
+
+    <ul class="brewery-list">
+      <li ng-repeat="beer in beers | orderBy: 'brewery' ">  <!-- the beer list conveniently includes breweries -->
+        <h3 ng-bind="beer.brewery"></h3>
+      </li>
+    </ul>
+
+  </div>
