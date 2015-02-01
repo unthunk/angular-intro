@@ -1,0 +1,11 @@
+  <div ng-controller="breweriesCtrl">
+
+    <h2 ng-bind="breweriesTitle | capitalize"></h2>
+
+    <ul class="brewery-list">
+      <li ng-repeat="brewery in breweries()">  <!-- how should you handle the duplicate breweries? -->
+        <h3 ng-bind="brewery"></h3>
+      </li>
+    </ul>
+
+  </div>

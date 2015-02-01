@@ -1,0 +1,16 @@
+  <div ng-controller="beerListCtrl">
+
+    <h2 ng-bind="listTitle | capitalize"></h2>
+
+    <input type="text" ng-model="search">
+
+    <ul class="beer-list">
+      <li ng-repeat="beer in beers | filter: search | orderBy: 'name' ">
+        <h3 ng-bind="beer.name"></h3>
+        <p ng-bind="beer.style"></p>
+        <img ng-src="/img/{{beer.img}}" />
+        <p><a href ng-click="deleteBeer(beer)">delete</a></p>  <!-- click to remove this beer -->
+      </li>
+    </ul>
+
+  </div>
