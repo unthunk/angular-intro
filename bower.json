@@ -1,0 +1,26 @@
+{
+  "name": "angular-intro",
+  "version": "0.0.1",
+  "homepage": "https://github.com/unthunk/angular-intro",
+  "authors": [
+    "Lucas Myers <lucas@unthunk.com>"
+  ],
+  "description": "introduction to AngularJS",
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-route": "~1.3.10",
+    "angular": "~1.3.11"
+  },
+  "resolutions": {
+    "angular": "~1.3.11"
+  }
+}
