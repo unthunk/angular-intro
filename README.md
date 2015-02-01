@@ -76,3 +76,4 @@ Beer app!
 10. More data-binding
   - remove a beer affects the service and thus the brewery list
 
+11. REST
